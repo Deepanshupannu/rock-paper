@@ -7,6 +7,7 @@ let playerSelection;
 const head1=document.querySelector("h1");
 const head2=document.querySelector("h2");
 const head3=document.querySelector("h3");
+const head4=document.querySelector("h4");
 
 
 const hideWeapons1=document.querySelector("#rock-btn");
@@ -56,6 +57,11 @@ function scissors(){
 
 
 
+function choice(){
+    head4.textContent="you choose  "+ click();
+}
+
+choice();
 
 
 // This Function provides random selection out of an array
@@ -64,9 +70,7 @@ function computerPlay(){
     let choices=["Rock","Scissors","Paper"];
     let computerSelect=choices[Math.floor(Math.random()*Math.floor(3))];
     return computerSelect
-}
-
-
+}    
 
 
 // this Function runs when user wins the game round
@@ -93,6 +97,7 @@ function computerVictory(){
 
 function draw(){
     head1.textContent="Its a draw";
+    head2.textContent="";
 }
 
 
@@ -116,8 +121,6 @@ else if(
     computerVictory();
 }
 head3.textContent="player Score: "+ playerScore + "|Computer Score:" +computerScore;
-
-
 
 
 }
