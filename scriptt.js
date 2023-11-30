@@ -78,7 +78,7 @@ function computerPlay(){
 
 function userVictory(){
     playerScore+=1;
-    head1.textContent="you Won the round";
+    head1.textContent="You Won the round";
     head2.textContent= playerSelection + " beats " + computerSelection;
 }
 
@@ -87,7 +87,7 @@ function userVictory(){
 
 function computerVictory(){
     computerScore+=1;
-    head1.textContent="you lose the round";
+    head1.textContent="You lost the round";
     head2.textContent=computerSelection + " beats "  + playerSelection;
 
 
@@ -96,7 +96,7 @@ function computerVictory(){
 // this Function runs When a round is draw
 
 function draw(){
-    head1.textContent="Its a draw";
+    head1.textContent="It's a draw";
     head2.textContent="";
 }
 

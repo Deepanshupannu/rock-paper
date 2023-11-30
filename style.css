@@ -8,16 +8,20 @@ body{
     justify-content: space-evenly;
     padding: 80px;
 }
+h1{
+    font-size: 4vh;
+}
 
-button{height: 150px;
-    width: 300px;
-    background: transparent;
+button{height: 15vh;
+    width: 15vw;
+    background: white;
     border: 4px solid grey;
     border-radius: 20%;
+    font-size: 5vh;
 
 }
 #container{
-    font-size: 190px;
+
 }
 
 
